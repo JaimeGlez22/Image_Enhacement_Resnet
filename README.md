@@ -1,4 +1,4 @@
-# Image Enhacement Resnet
+# Image Enhancement Resnet
 
 This repository contains the implementation and evaluation of different convolutional neural network architectures for various image enhancement tasks. Below is an overview of the contents of each folder:
 
