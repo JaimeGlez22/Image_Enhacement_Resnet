@@ -8,7 +8,7 @@ We use different CNN-based models, mainly ResNet and VGG architectures, to enhan
 
 ### ResNetAE and ResNetAE_skip
 
-These models use ResNet as the backbone for autoencoder structures, with `ResNetAE_skip` incorporating skip connections between the input layer and the output layer for better feature retention.
+These models use ResNet as the backbone for autoencoder structures, with _ResNetAE_skip_ incorporating skip connections between the input layer and the output layer for better feature retention.
 
 <div align="center">
     <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_resnetAE_background.png" alt="ResNetAE Architecture" width="90%">
@@ -21,7 +21,7 @@ These models use ResNet as the backbone for autoencoder structures, with `ResNet
 </div>
 
 
-ResNetAE Architecture: The model enhances images by learning compressed representations and then reconstructing them through a decoding process. The skip connections in `ResNetAE_skip` improve detail preservation, particularly in high-frequency regions of the image.
+ResNetAE Architecture: The model enhances images by learning compressed representations and then reconstructing them through a decoding process. The skip connections in _ResNetAE_skip_ improve detail preservation, particularly in high-frequency regions of the image.
 
 ### VGGAE
 A modified VGG architecture is used to enhance images, taking advantage of its depth for detailed feature extraction.
@@ -31,8 +31,10 @@ A modified VGG architecture is used to enhance images, taking advantage of its d
     <p><em>VGGAE Architecture</em></p>
 </div>
 
-`VGGAE Architecture`: Designed for image enhancement tasks by leveraging the deep feature extraction capabilities of VGG.
+_VGGAE Architecture_: Designed for image enhancement tasks by leveraging the deep feature extraction capabilities of VGG.
+
 ____
+
 ## Image Enhancement Tasks
 
 ### 1. Image Denoising (RGB and MNIST)
@@ -41,7 +43,7 @@ We employ the implemented models to reduce noise in images, imporving clarity wh
 
 #### MNIST Denoising
 
-`Before and After Denoising on MNIST`: Enhancing the clarity of grayscale images while preserving the shape of digits. Using the MNIST dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_mnist).
+_Before and After Denoising on MNIST_: Enhancing the clarity of grayscale images while preserving the shape of digits. Using the MNIST dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_mnist).
 
 <div align="center">
     <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_mnist/figures/comparation.png" alt="VGGAE Architecture" width="90%">
@@ -50,13 +52,32 @@ We employ the implemented models to reduce noise in images, imporving clarity wh
 
 #### RGB Denoising 
 
-`Before and After Denoising on RGB Images`: The model effectively removes noise while maintaining color and detail integrity. Using the Thumbanils 128x128 dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_color).
+_Before and After Denoising on RGB Images_: The model effectively removes noise while maintaining color and detail integrity. Using the Thumbanils 128x128 dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_color).
 
 <div align="center">
     <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_color/figures/comparation.png" alt="VGGAE Architecture" width="90%">
     <p><em>Example of color image denoising</em></p>
 </div>
 
+---
+
+### 2. Image Colorization
+
+Using the deep learning models, we restore colors in grayscale images predicting the color values for each pixel. Using the Landscape Image dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/image%20colorization).
+
+_Before and After Colorization_: The model predicts accurate color representations, giving life to grayscale images.
+
+<div align="center">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/image%20colorization/figures/comparation_AE.png" alt="VGGAE Architecture" width="90%">
+    <p><em>Example of image colorization using ResNetAE</em></p>
+</div>
+
+<div align="center">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/image%20colorization/figures/comparation_mod.png" alt="VGGAE Architecture" width="90%">
+    <p><em>Example of image colorization using ResNetAE_skip</em></p>
+</div>
+
+---
 
 - [`AE_ResNet`](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/AE_RESNET): contains the python implementation of the two ResNetAE proposed. The file resnetAE.py contains the python class corresponding to the ResNetAE, meanwhile the python file resnetAE_mod.py contains the implementation of the ResNetAE_skip.
 
