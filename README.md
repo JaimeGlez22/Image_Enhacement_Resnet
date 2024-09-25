@@ -26,7 +26,10 @@ ResNetAE Architecture: The model enhances images by learning compressed represen
 ### VGGAE
 A modified VGG architecture is used to enhance images, taking advantage of its depth for detailed feature extraction.
 
-![VGGAE Architecture](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_vggAE_background.png)
+<div align="center">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_vggAE_background.png" alt="VGGAE Architecture" width="90%">
+    <p><em>VGGAE Architecture</em></p>
+</div>
 
 `VGGAE Architecture`: Designed for image enhancement tasks by leveraging the deep feature extraction capabilities of VGG.
 
