@@ -46,7 +46,7 @@ We employ the implemented models to reduce noise in images, imporving clarity wh
 _Before and After Denoising on MNIST_: Enhancing the clarity of grayscale images while preserving the shape of digits. Using the MNIST dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_mnist).
 
 <div align="center">
-    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_mnist/figures/comparation.png" alt="VGGAE Architecture" width="90%">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_mnist/figures/comparation.png" alt="mnist denoising" width="90%">
     <p><em>Example of color image denoising</em></p>
 </div>
 
@@ -55,7 +55,7 @@ _Before and After Denoising on MNIST_: Enhancing the clarity of grayscale images
 _Before and After Denoising on RGB Images_: The model effectively removes noise while maintaining color and detail integrity. Using the Thumbanils 128x128 dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_color).
 
 <div align="center">
-    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_color/figures/comparation.png" alt="VGGAE Architecture" width="90%">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_color/figures/comparation.png" alt="rgb denoising" width="90%">
     <p><em>Example of color image denoising</em></p>
 </div>
 
@@ -68,25 +68,40 @@ Using the deep learning models, we restore colors in grayscale images predicting
 _Before and After Colorization_: The model predicts accurate color representations, giving life to grayscale images.
 
 <div align="center">
-    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/image%20colorization/figures/comparation_AE.png" alt="VGGAE Architecture" width="90%">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/image%20colorization/figures/comparation_AE.png" alt="image colorization" width="90%">
     <p><em>Example of image colorization using ResNetAE</em></p>
 </div>
 
 <div align="center">
-    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/image%20colorization/figures/comparation_mod.png" alt="VGGAE Architecture" width="90%">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/image%20colorization/figures/comparation_mod.png" alt="Skip image colorization" width="90%">
     <p><em>Example of image colorization using ResNetAE_skip</em></p>
 </div>
 
 ---
 
-- [`AE_ResNet`](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/AE_RESNET): contains the python implementation of the two ResNetAE proposed. The file resnetAE.py contains the python class corresponding to the ResNetAE, meanwhile the python file resnetAE_mod.py contains the implementation of the ResNetAE_skip.
+### 3. Super-Resolution
 
-/AE_VGG: contains the python implementation of the VGGAE.
+Our super-resolution models generate high-resolution versions of low-resolution images by learning to upscale while preserving fine details. Using the Labeled Faces in the Wild dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/superresolution)
 
-/denoising_color: contains the jupyter notebooks for the training of the model for the denoising task in RGB images and the evaluation results.
+_Before and After Super-Resolution_: The model sharpens and upscales images, enhancing resolution without significant quality loss.
 
-/denoising_mnsit: contains the jupyter notebooks for the training of the model for the denoising task for the MNIST dateset and the evaluation results.
+<div align="center">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/superresolution/figures/comparation.png" alt="superresolution" width="90%">
+    <p><em>Example of Super-Resolution</em></p>
+</div>
 
-/image colorization: contains the jupyter notebooks for the training of the model for the colorization task and the evaluation results.
+---
 
-/superresolution: contains the jupyter notebooks for the training of the model for the super-resolution task  and the evaluation results.
+## Folder Structure
+
+- [AE_ResNet](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/AE_RESNET): contains the Python implementation of the two proposed ResNetAE models (resnetAE.py and resnetAE_skip.py).
+
+- [AE_VGG](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/AE_VGG): contains the Python implementation of VGGAE.
+
+- [denoising_color](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_color): Jupyter notebooks for RGB image denoising.
+
+- [denoising_mnsit](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_mnist): Jupyter notebooks for MNIST image denoising.
+
+- [image colorization](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/image%20colorization): Jupyter notebooks for image colorization.
+
+- [superresolution](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/superresolution): Jupyter notebooks for super-resolution tasks.
