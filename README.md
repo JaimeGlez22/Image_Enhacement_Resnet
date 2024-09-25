@@ -32,9 +32,30 @@ A modified VGG architecture is used to enhance images, taking advantage of its d
 </div>
 
 `VGGAE Architecture`: Designed for image enhancement tasks by leveraging the deep feature extraction capabilities of VGG.
-
 ____
+## Image Enhancement Tasks
 
+### 1. Image Denoising (RGB and MNIST)
+
+We employ the implemented models to reduce noise in images, imporving clarity while preserving important details. The following examples demostrate the denosing process apllied to both color and grayscale images.
+
+#### MNIST Denoising
+
+`Before and After Denoising on MNIST`: Enhancing the clarity of grayscale images while preserving the shape of digits. Using the MNIST dataset. More info [`here`]("https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_mnist")
+
+<div align="center">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_mnist/figures/comparation.png" alt="VGGAE Architecture" width="90%">
+    <p><em>Example of color image denoising</em></p>
+</div>
+
+#### RGB Denoising 
+
+`Before and After Denoising on RGB Images`: The model effectively removes noise while maintaining color and detail integrity. Using the Thumbanils 128x128 dataset. More info [`here`]("https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_color")
+
+<div align="center">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_color/figures/comparation.png" alt="VGGAE Architecture" width="90%">
+    <p><em>Example of color image denoising</em></p>
+</div>
 
 
 - [`AE_ResNet`](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/AE_RESNET): contains the python implementation of the two ResNetAE proposed. The file resnetAE.py contains the python class corresponding to the ResNetAE, meanwhile the python file resnetAE_mod.py contains the implementation of the ResNetAE_skip.
