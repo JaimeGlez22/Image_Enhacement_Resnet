@@ -10,6 +10,14 @@ We use different CNN-based models, mainly ResNet and VGG architectures, to enhan
 
 These models use ResNet as the backbone for autoencoder structures, with `ResNetAE_skip` incorporating skip connections between the input layer and the output layer for better feature retention.
 
+<div align="center">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_resnetAE_background.png" alt="ResNetAE Architecture" width="400">
+</div>
+
+<div align="center">
+    <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_resnetAE_skip_bg.png" alt="ResNetAE_skip Architecture" width="400">
+</div>
+
 ![ResNetAE Architecture](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_resnetAE_background.png)
 ![ResNetAE_skip Architecture](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_resnetAE_skip_bg.png)
 
