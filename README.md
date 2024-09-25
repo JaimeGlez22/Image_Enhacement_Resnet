@@ -12,10 +12,12 @@ These models use ResNet as the backbone for autoencoder structures, with `ResNet
 
 <div align="center">
     <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_resnetAE_background.png" alt="ResNetAE Architecture" width="90%">
+    <p><em>ResNetAE Architecture</em></p>
 </div>
 
 <div align="center">
     <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/auxiliar/EN_resnetAE_skip_bg.png" alt="ResNetAE_skip Architecture" width="50%">
+    <p><em>ResNetAE_skip Architecture</em></p>
 </div>
 
 
