@@ -105,3 +105,5 @@ _Before and After Super-Resolution_: The model sharpens and upscales images, enh
 - [image colorization](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/image%20colorization): Jupyter notebooks for image colorization.
 
 - [superresolution](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/superresolution): Jupyter notebooks for super-resolution tasks.
+
+- [docs](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/docs): Master's Thesis report.
