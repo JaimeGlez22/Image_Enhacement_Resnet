@@ -41,7 +41,7 @@ We employ the implemented models to reduce noise in images, imporving clarity wh
 
 #### MNIST Denoising
 
-`Before and After Denoising on MNIST`: Enhancing the clarity of grayscale images while preserving the shape of digits. Using the MNIST dataset. More info [here]("https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_mnist").
+`Before and After Denoising on MNIST`: Enhancing the clarity of grayscale images while preserving the shape of digits. Using the MNIST dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_mnist).
 
 <div align="center">
     <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_mnist/figures/comparation.png" alt="VGGAE Architecture" width="90%">
@@ -50,7 +50,7 @@ We employ the implemented models to reduce noise in images, imporving clarity wh
 
 #### RGB Denoising 
 
-`Before and After Denoising on RGB Images`: The model effectively removes noise while maintaining color and detail integrity. Using the Thumbanils 128x128 dataset. More info [here]("https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_color").
+`Before and After Denoising on RGB Images`: The model effectively removes noise while maintaining color and detail integrity. Using the Thumbanils 128x128 dataset. More info [here](https://github.com/JaimeGlez22/Image_Enhacement_Resnet/tree/main/denoising_color).
 
 <div align="center">
     <img src="https://github.com/JaimeGlez22/Image_Enhacement_Resnet/blob/main/denoising_color/figures/comparation.png" alt="VGGAE Architecture" width="90%">
